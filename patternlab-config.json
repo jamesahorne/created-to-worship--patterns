@@ -8,8 +8,8 @@
     "m": false,
     "l": false,
     "full": false,
-    "random": false,
-    "disco": false,
+    "random": true,
+    "disco": true,
     "hay": true,
     "mqs": false,
     "find": false,
@@ -21,18 +21,9 @@
     "tools-docs": false
   },
   "ishViewportRange": {
-    "s": [
-      240,
-      500
-    ],
-    "m": [
-      500,
-      800
-    ],
-    "l": [
-      800,
-      2600
-    ]
+    "s": [320, 320],
+    "m": [768, 768],
+    "l": [1440, 1440]
   },
   "logLevel": "info",
   "outputFileSuffixes": {
@@ -73,11 +64,7 @@
     }
   },
   "patternExtension": "twig",
-  "patternStateCascade": [
-    "inprogress",
-    "inreview",
-    "complete"
-  ],
+  "patternStateCascade": ["inprogress", "inreview", "complete"],
   "patternExportAll": false,
   "patternExportDirectory": "pattern_exports",
   "patternExportPatternPartials": [],
@@ -109,52 +96,38 @@
         {
           "id": "atoms",
           "recursive": true,
-          "paths": [
-            "source/_patterns/00-atoms"
-          ]
+          "paths": ["source/_patterns/00-atoms"]
         },
         {
           "id": "molecules",
           "recursive": true,
-          "paths": [
-            "source/_patterns/01-molecules"
-          ]
+          "paths": ["source/_patterns/01-molecules"]
         },
         {
           "id": "organisms",
           "recursive": true,
-          "paths": [
-            "source/_patterns/02-organisms"
-          ]
+          "paths": ["source/_patterns/02-organisms"]
         },
         {
           "id": "templates",
           "recursive": true,
-          "paths": [
-            "source/_patterns/03-templates"
-          ]
+          "paths": ["source/_patterns/03-templates"]
         },
         {
           "id": "pages",
           "recursive": true,
-          "paths": [
-            "source/_patterns/04-pages"
-          ]
+          "paths": ["source/_patterns/04-pages"]
         },
         {
           "id": "macros",
           "recursive": true,
-          "paths": [
-            "source/_macros"
-          ]
+          "paths": ["source/_macros"]
         }
       ],
       "alterTwigEnv": [
         {
           "file": "alter-twig.php",
-          "functions": [
-            "addCustomExtension"
-          ]
+          "functions": ["addCustomExtension"]
         }
       ]
     }
