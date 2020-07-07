@@ -1,0 +1,64 @@
+// Breakpoints
+@mixin breakpoint-up($breakpoint-min: $md) {
+  @media (min-width: #{$breakpoint-min}rem) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($breakpoint-max: $md) {
+  @media (max-width: #{$breakpoint-max - 0.001}rem) {
+    @content;
+  }
+}
+
+@mixin breakpoint-between($breakpoint-min, $breakpoint-max) {
+  @media (min-width: #{$breakpoint-min}rem) and (max-width: #{$breakpoint-max - 0.001}rem) {
+    @content;
+  }
+}
+
+// Fonts/Text
+@mixin font-sizing-default {
+  font-size: fontSize(0);
+  @include breakpoint-up {
+    font-size: fontSize(1);
+  }
+}
+
+@mixin font-primary {
+  font-family: "Quicksand", sans-serif, Arial;
+}
+
+@mixin font-secondary {
+  font-family: "Montserrat", sans-serif, Arial;
+}
+
+@mixin font-tertiary {
+  font-family: "Amatic SC", sans-serif, Arial;
+}
+
+@mixin heading($level: 1) {
+  font-weight: $weight-medium;
+  @if $level == 2 {
+    font-size: fontSize(1);
+    margin: 1.5rem 0 0.75rem;
+    @include breakpoint-up {
+      font-size: fontSize(2);
+      margin: 1.75rem 0 1rem;
+    }
+  } @else if $level == 3 {
+    font-size: fontSize(0);
+    margin: 1rem 0 0.75rem;
+    @include breakpoint-up {
+      font-size: fontSize(1);
+      margin: 1.5rem 0 1rem;
+    }
+  } @else {
+    font-size: fontSize(2);
+    margin: 2rem 0 1rem;
+    @include breakpoint-up {
+      font-size: fontSize(3);
+      margin: 2.5rem 0 1.25rem;
+    }
+  }
+}

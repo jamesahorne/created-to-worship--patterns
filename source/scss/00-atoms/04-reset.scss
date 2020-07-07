@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+// blockquote, body, dd, dl, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, ol, p, pre, ul {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
+  margin: 0;
+}
+
+// fieldset, legend, ol, ul {
+ul {
+  padding: 0;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  // color: $colour-black-500;
+  // &:visited {
+  //   color: $colour-black-500;
+  // }
+}
+
+li {
+  display: block;
+}
+
+// input, textarea, button {
+button {
+  font: inherit;
+}

@@ -1,0 +1,9 @@
+body {
+  @include font-primary;
+  @include font-sizing-default;
+  // background-color: $colour-white;
+  // color: $colour-black-500;
+  line-height: $line-height;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
