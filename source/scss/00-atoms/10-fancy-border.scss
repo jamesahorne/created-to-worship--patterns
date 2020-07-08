@@ -1,0 +1,20 @@
+.u-fancy-border {
+  position: relative;
+  background-color: white;
+  border-radius: 25px 0 25px 25px;
+  padding: 2rem 1.5rem;
+  filter: drop-shadow(0 0 1px #652ad4);
+}
+
+.u-fancy-border::before {
+  content: "";
+  position: absolute;
+
+  background-color: transparent;
+  top: -50%;
+  right: 0;
+  height: 50%;
+  width: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0 25px 0 0 white;
+}

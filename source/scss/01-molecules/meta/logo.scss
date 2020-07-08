@@ -1,0 +1,27 @@
+.logo {
+  @include font-secondary;
+  display: block;
+
+  &--created {
+    font-size: fontSize(2);
+    font-weight: $weight-light;
+    text-transform: lowercase;
+    margin-right: -10px;
+  }
+  &--to {
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+    font-size: fontSize(-1);
+    padding-left: 9px;
+    letter-spacing: $spacing;
+  }
+  &--worship {
+    font-size: fontSize(2);
+    margin-left: -11px;
+  }
+
+  span {
+    font-weight: $weight-light;
+    display: inline-block;
+  }
+}
