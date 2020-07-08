@@ -23,7 +23,7 @@
   "ishViewportRange": {
     "s": [320, 320],
     "m": [768, 768],
-    "l": [1440, 1440]
+    "l": [1200, 1920]
   },
   "logLevel": "info",
   "outputFileSuffixes": {
