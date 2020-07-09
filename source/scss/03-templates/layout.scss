@@ -1,11 +1,11 @@
 .u-container {
-  padding: space(2);
+  padding: 0 space(2);
   @include breakpoint-up($sm) {
-    padding: space(4);
+    padding: 0 space(4);
   }
   @include breakpoint-up {
     max-width: #{$lg}rem;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 space(8);
   }
 }
