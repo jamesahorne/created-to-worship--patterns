@@ -1,10 +1,10 @@
 .hero {
   text-align: center;
-  height: calc(100vh - #{$header-height + space(2)});
+  min-height: calc(100vh - #{$header-height + space(2)});
   padding-top: 25%;
   @include breakpoint-up {
-    height: calc(100vh - #{$header-height--md + space(2)});
-    padding-top: space(14);
+    min-height: calc(100vh - #{$header-height--md + space(2)});
+    padding: space(14) 0;
   }
 }
 
