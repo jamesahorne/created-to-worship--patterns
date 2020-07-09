@@ -1,7 +1,10 @@
 .u-container {
-  max-width: #{$lg}rem;
-  margin: 0 auto;
-  &--large {
-    max-width: #{$xl}rem;
+  padding: space(2);
+  @include breakpoint-up($sm) {
+    padding: space(4);
+  }
+  @include breakpoint-up {
+    max-width: #{$lg}rem;
+    margin: 0 auto;
   }
 }

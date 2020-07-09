@@ -17,6 +17,14 @@
   }
 }
 
+// Containers
+@mixin header-footer-container {
+  @include breakpoint-up {
+    max-width: #{$xl}rem;
+    margin: 0 auto;
+  }
+}
+
 // Fonts/Text
 @mixin font-sizing-default {
   font-size: fontSize(0);
