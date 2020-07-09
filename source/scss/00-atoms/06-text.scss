@@ -1,15 +1,15 @@
 .u-heading-1 {
-  @include font-secondary;
+  // @include font-secondary;
   @include heading;
 }
 
 .u-heading-2 {
-  @include font-secondary;
+  // @include font-secondary;
   @include heading(2);
 }
 
 .u-heading-3 {
-  @include font-secondary;
+  // @include font-secondary;
   @include heading(3);
   &--center {
     text-align: center;
