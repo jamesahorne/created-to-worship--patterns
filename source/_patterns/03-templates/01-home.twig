@@ -1,1 +1,4 @@
-<p>{{ content }}</p>
+{% include "02-organisms/meta/header.twig" %}
+<main class="u-container">
+  {% include "02-organisms/misc/hero.twig" with { video__large: true } %}
+</main>
