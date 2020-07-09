@@ -27,10 +27,10 @@ button {
 
 a {
   text-decoration: none;
-  // color: $colour-black-500;
-  // &:visited {
-  //   color: $colour-black-500;
-  // }
+  color: black;
+  &:visited {
+    color: black;
+  }
 }
 
 li {

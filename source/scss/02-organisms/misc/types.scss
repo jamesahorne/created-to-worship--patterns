@@ -1,0 +1,36 @@
+.types {
+  > *:nth-child(2n-1) {
+    > * {
+      margin-left: space(-4);
+      padding: space(4) space(4) space(4) space(5);
+      clip-path: polygon(
+        0 0,
+        100% #{space(2)},
+        100% calc(100% - #{space(2)}),
+        0 100%
+      );
+      @include breakpoint-up {
+        width: calc(100% - #{space(10)});
+        padding: space(7) space(7) space(7) space(14);
+      }
+    }
+  }
+  > *:nth-child(2n) {
+    > * {
+      margin-right: space(-4);
+      padding: space(4) space(5) space(4) space(4);
+      clip-path: polygon(
+        0 #{space(2)},
+        100% 0,
+        100% 100%,
+        0 calc(100% - #{space(2)})
+      );
+      @include breakpoint-up {
+        position: relative;
+        right: space(-10);
+        width: calc(100% - #{space(10)});
+        padding: space(7) space(14) space(7) space(7);
+      }
+    }
+  }
+}

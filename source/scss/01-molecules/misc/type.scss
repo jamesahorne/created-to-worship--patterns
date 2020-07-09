@@ -1,0 +1,29 @@
+.type {
+  @include breakpoint-up {
+    margin-bottom: space(3);
+  }
+  &--1 {
+    > * {
+      background-image: linear-gradient(to right, white, tan);
+    }
+  }
+  &--2 {
+    > * {
+      background-image: linear-gradient(to right, thistle, white);
+    }
+  }
+  &--3 {
+    > * {
+      background-image: linear-gradient(to right, white, coral);
+    }
+  }
+  &--4 {
+    > * {
+      background-image: linear-gradient(to right, steelblue, white);
+    }
+  }
+}
+
+.type__link {
+  display: block;
+}
