@@ -1,0 +1,7 @@
+.u-container {
+  max-width: #{$lg}rem;
+  margin: 0 auto;
+  &--large {
+    max-width: #{$xl}rem;
+  }
+}
