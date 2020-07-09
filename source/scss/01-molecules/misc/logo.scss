@@ -24,28 +24,44 @@
     font-weight: $weight-medium;
     padding-left: 8px;
     letter-spacing: $spacing;
+    @include breakpoint-up {
+      font-size: fontSize(-1);
+    }
   }
   &--worship {
     margin-left: -11px;
     @include breakpoint-up {
-      margin-left: -13px;
+      margin-left: -12px;
     }
   }
   &--large {
+    display: block;
     .logo {
       &--created,
       &--worship {
-        font-size: fontSize(7);
+        font-size: fontSize(3);
+        @include breakpoint-up {
+          font-size: fontSize(7);
+        }
       }
       &--created {
-        margin-right: -10px;
+        margin-left: -11px;
+        @include breakpoint-up {
+          margin-right: -26px;
+        }
       }
       &--to {
         font-size: fontSize(-1);
-        padding-left: 9px;
+        @include breakpoint-up {
+          font-size: fontSize(3);
+          padding-left: 19px;
+        }
       }
       &--worship {
-        margin-left: -11px;
+        margin-left: -12px;
+        @include breakpoint-up {
+          margin-left: -30px;
+        }
       }
     }
   }
