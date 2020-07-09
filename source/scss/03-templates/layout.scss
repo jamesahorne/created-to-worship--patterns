@@ -6,5 +6,6 @@
   @include breakpoint-up {
     max-width: #{$lg}rem;
     margin: 0 auto;
+    padding: 0;
   }
 }
