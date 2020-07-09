@@ -27,7 +27,7 @@
     }
   }
 
-  *:first-child {
+  > *:first-child {
     margin-bottom: space(1);
   }
 }
