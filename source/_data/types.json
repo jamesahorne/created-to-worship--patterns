@@ -1,0 +1,20 @@
+{
+  "types": [
+    {
+      "heading": "Songwriting",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, saepe."
+    },
+    {
+      "heading": "Art",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, saepe."
+    },
+    {
+      "heading": "Dance",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, saepe."
+    },
+    {
+      "heading": "Spoken word",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, saepe."
+    }
+  ]
+}
