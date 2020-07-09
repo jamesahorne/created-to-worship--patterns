@@ -1,0 +1,56 @@
+.logo {
+  @include font-secondary;
+  display: inline-block;
+
+  &--created,
+  &--worship {
+    font-size: fontSize(2);
+    font-weight: $weight-light;
+    @include breakpoint-up {
+      font-size: fontSize(3);
+    }
+  }
+  &--created {
+    text-transform: lowercase;
+    margin-right: -10px;
+    @include breakpoint-up {
+      margin-right: -11px;
+    }
+  }
+  &--to {
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+    font-size: fontSize(-2);
+    font-weight: $weight-medium;
+    padding-left: 8px;
+    letter-spacing: $spacing;
+  }
+  &--worship {
+    margin-left: -11px;
+    @include breakpoint-up {
+      margin-left: -13px;
+    }
+  }
+  &--large {
+    .logo {
+      &--created,
+      &--worship {
+        font-size: fontSize(7);
+      }
+      &--created {
+        margin-right: -10px;
+      }
+      &--to {
+        font-size: fontSize(-1);
+        padding-left: 9px;
+      }
+      &--worship {
+        margin-left: -11px;
+      }
+    }
+  }
+
+  span {
+    display: inline-block;
+  }
+}

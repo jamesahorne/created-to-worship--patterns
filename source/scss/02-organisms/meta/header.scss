@@ -1,5 +1,12 @@
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
+  padding: space(1) space(2);
+  @include breakpoint-up {
+    padding: 0 0 0 1.5rem;
+  }
+  @include breakpoint-up($xxl) {
+    padding: 0;
+  }
 }

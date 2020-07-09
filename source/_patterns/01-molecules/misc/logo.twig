@@ -1,4 +1,7 @@
-<a class="logo" href="{{ attribute(link, 'pages-home') }}">
+<a
+  class="logo{% if logo_large %} logo--large{% endif %}"
+  href="{{ attribute(link, 'pages-home') }}"
+>
   <span class="logo--created">Created</span>
   <span class="logo--to">to</span>
   <span class="logo--worship">WRSHP</span>
