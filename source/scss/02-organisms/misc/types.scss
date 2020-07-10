@@ -1,33 +1,61 @@
 .types {
-  > *:nth-child(2n-1) {
+  > *:nth-child(2n) {
     > * {
-      margin-left: space(-4);
-      padding: space(4) space(4) space(4) space(5);
+      margin-left: space(-2);
+      padding: space(4);
       clip-path: polygon(
         0 0,
         100% #{space(2)},
         100% calc(100% - #{space(2)}),
         0 100%
       );
+      @include breakpoint-up($sm) {
+        margin-left: space(-4);
+      }
       @include breakpoint-up {
+        margin-left: space(-3);
+        width: calc(100% - #{space(5)});
+        padding: space(7) space(7) space(7) space(14);
+        clip-path: polygon(
+          0 0,
+          100% #{space(4)},
+          100% calc(100% - #{space(4)}),
+          0 100%
+        );
+      }
+      @include breakpoint-up($lg) {
         width: calc(100% - #{space(10)});
         padding: space(7) space(7) space(7) space(14);
       }
     }
   }
-  > *:nth-child(2n) {
+  > *:nth-child(2n + 1) {
     > * {
-      margin-right: space(-4);
-      padding: space(4) space(5) space(4) space(4);
+      margin-right: space(-2);
+      padding: space(4);
       clip-path: polygon(
         0 #{space(2)},
         100% 0,
         100% 100%,
         0 calc(100% - #{space(2)})
       );
+      @include breakpoint-up($sm) {
+        margin-right: space(-4);
+      }
       @include breakpoint-up {
         position: relative;
-        right: space(-10);
+        right: space(-8);
+        width: calc(100% - #{space(5)});
+        padding: space(7) space(14) space(7) space(7);
+        clip-path: polygon(
+          0 #{space(4)},
+          100% 0,
+          100% 100%,
+          0 calc(100% - #{space(4)})
+        );
+      }
+      @include breakpoint-up($lg) {
+        right: space(-13);
         width: calc(100% - #{space(10)});
         padding: space(7) space(14) space(7) space(7);
       }

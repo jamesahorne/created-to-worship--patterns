@@ -1,6 +1,9 @@
 .type {
   @include breakpoint-up {
-    margin-bottom: space(3);
+    margin-bottom: space(-2);
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   &--1 {
     > * {
