@@ -48,25 +48,25 @@
 @mixin heading($level: 1) {
   font-weight: $weight-medium;
   @if $level == 2 {
-    font-size: fontSize(1);
-    margin: 1.5rem 0 0.75rem;
-    @include breakpoint-up {
-      font-size: fontSize(2);
-      margin: 1.75rem 0 1rem;
-    }
-  } @else if $level == 3 {
-    font-size: fontSize(0);
-    margin: 1rem 0 0.75rem;
-    @include breakpoint-up {
-      font-size: fontSize(1);
-      margin: 1.5rem 0 1rem;
-    }
-  } @else {
     font-size: fontSize(2);
-    margin: 2rem 0 1rem;
+    margin: 1.5rem 0;
     @include breakpoint-up {
       font-size: fontSize(3);
-      margin: 2.5rem 0 1.25rem;
+      margin: 1.75rem 0;
+    }
+  } @else if $level == 3 {
+    font-size: fontSize(1);
+    margin: 1rem 0;
+    @include breakpoint-up {
+      font-size: fontSize(2);
+      margin: 1.5rem 0;
+    }
+  } @else {
+    font-size: fontSize(3);
+    margin: 2rem 0;
+    @include breakpoint-up {
+      font-size: fontSize(4);
+      margin: 2.5rem 0;
     }
   }
 }
