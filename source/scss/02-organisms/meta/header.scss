@@ -5,7 +5,7 @@
   align-items: baseline;
   padding: space(1) space(2);
   @include breakpoint-up {
-    padding: 0 0 0 1.5rem;
+    padding: 0 0 0 space(3);
   }
   @include breakpoint-up($xxl) {
     padding: 0;

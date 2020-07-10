@@ -49,24 +49,24 @@
   font-weight: $weight-medium;
   @if $level == 2 {
     font-size: fontSize(2);
-    margin: 1.5rem 0;
+    margin: space(3) 0;
     @include breakpoint-up {
       font-size: fontSize(3);
-      margin: 1.75rem 0;
+      margin: space(4) 0;
     }
   } @else if $level == 3 {
     font-size: fontSize(1);
-    margin: 1rem 0;
+    margin: space(2) 0;
     @include breakpoint-up {
       font-size: fontSize(2);
-      margin: 1.5rem 0;
+      margin: space(3) 0;
     }
   } @else {
     font-size: fontSize(3);
-    margin: 2rem 0;
+    margin: space(4) 0;
     @include breakpoint-up {
       font-size: fontSize(4);
-      margin: 2.5rem 0;
+      margin: space(5) 0;
     }
   }
 }

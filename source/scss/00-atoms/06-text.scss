@@ -7,9 +7,9 @@
   @include font-secondary;
   @include heading(2);
   &--lg-mb {
-    margin-bottom: 2.5rem;
+    margin-bottom: space(5);
     @include breakpoint-up {
-      margin-bottom: 3.5rem;
+      margin-bottom: space(7);
     }
   }
 }
@@ -23,7 +23,7 @@
 }
 
 .u-text {
-  margin-bottom: 0.75rem;
+  margin-bottom: space(2);
   &:last-child {
     margin-bottom: 0;
   }
@@ -33,6 +33,6 @@
   //   }
   // }
   &--highlighted {
-    padding: 0 0.5rem 1rem;
+    padding: space(2) space(4);
   }
 }
