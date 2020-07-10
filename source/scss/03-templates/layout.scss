@@ -9,3 +9,16 @@
     padding: 0 space(8);
   }
 }
+
+section {
+  margin-bottom: space(10);
+  @include breakpoint-up {
+    margin-bottom: space(15);
+  }
+  &:last-child {
+    margin-bottom: space(4);
+    @include breakpoint-up {
+      margin-bottom: space(6);
+    }
+  }
+}
