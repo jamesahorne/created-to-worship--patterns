@@ -17,9 +17,8 @@
 .nav-link {
   color: #652ad4;
   padding-bottom: space(0.5);
-  position: relative;
+  transition: 0.3s ease-in-out;
   &:hover {
     color: plum;
-    transition: 0.3s;
   }
 }
