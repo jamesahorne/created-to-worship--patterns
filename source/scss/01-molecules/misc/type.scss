@@ -1,8 +1,17 @@
 .type {
+  transition: 0.3s ease-in-out;
   @include breakpoint-up {
     margin-bottom: space(-2);
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    transform: scale(1.05);
+    > * {
+      box-shadow: $box-shadow;
     }
   }
   &--1 {

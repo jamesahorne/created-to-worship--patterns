@@ -2,7 +2,7 @@
   > *:nth-child(2n) {
     > * {
       margin-left: space(-2);
-      padding: space(4);
+      padding: space(3) space(4) space(4);
       clip-path: polygon(
         0 0,
         100% #{space(2)},
@@ -15,7 +15,7 @@
       @include breakpoint-up {
         margin-left: space(-3);
         width: calc(100% - #{space(5)});
-        padding: space(7) space(7) space(7) space(14);
+        padding: space(4) space(7) space(8) space(14);
         clip-path: polygon(
           0 0,
           100% #{space(4)},
@@ -25,14 +25,14 @@
       }
       @include breakpoint-up($lg) {
         width: calc(100% - #{space(10)});
-        padding: space(7) space(7) space(7) space(14);
+        padding: space(7) space(9) space(9) space(20);
       }
     }
   }
   > *:nth-child(2n + 1) {
     > * {
       margin-right: space(-2);
-      padding: space(4);
+      padding: space(3) space(4) space(4);
       clip-path: polygon(
         0 #{space(2)},
         100% 0,
@@ -46,7 +46,7 @@
         position: relative;
         right: space(-8);
         width: calc(100% - #{space(5)});
-        padding: space(7) space(14) space(7) space(7);
+        padding: space(4) space(14) space(8) space(7);
         clip-path: polygon(
           0 #{space(4)},
           100% 0,
@@ -57,7 +57,7 @@
       @include breakpoint-up($lg) {
         right: space(-13);
         width: calc(100% - #{space(10)});
-        padding: space(7) space(14) space(7) space(7);
+        padding: space(7) space(20) space(9) space(9);
       }
     }
   }
