@@ -18,10 +18,10 @@
 }
 
 // Containers
-@mixin header-footer-container {
-  @include breakpoint-up {
+@mixin header-footer-container($margin-y: 0) {
+  @include breakpoint-up($xl) {
     max-width: #{$xl}rem;
-    margin: 0 auto;
+    margin: #{$margin-y}px auto;
   }
 }
 
