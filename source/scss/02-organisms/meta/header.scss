@@ -7,7 +7,7 @@
   @include breakpoint-up {
     padding: 0 0 0 space(3);
   }
-  @include breakpoint-up($xxl) {
+  @include breakpoint-up(78) {
     padding: 0;
   }
 }
