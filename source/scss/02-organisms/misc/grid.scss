@@ -1,0 +1,36 @@
+.grid {
+  display: grid;
+  gap: space(2);
+  @include breakpoint-up {
+    grid-template-columns: repeat(2, 2fr);
+    gap: space(3);
+
+    > *:nth-child(1) {
+      order: -1;
+      @include breakpoint-up {
+        margin-bottom: calc(30px + #{space(2)});
+      }
+    }
+    > *:nth-child(2) {
+      order: -2;
+    }
+  }
+  @include breakpoint-up {
+    margin-left: calc((100% - 100vw) / 2 + #{space(3)});
+    margin-right: calc((100% - 100vw) / 2 + #{space(3)});
+  }
+  @include breakpoint-up(78) {
+    margin-left: calc(#{$lg}rem - #{$xl}rem + #{space(3)});
+    margin-right: calc(#{$lg}rem - #{$xl}rem + #{space(3)});
+  }
+}
+
+.grid__article {
+  text-align: center;
+  > *:first-child {
+    margin-bottom: space(1);
+    @include breakpoint-up {
+      margin-bottom: space(2);
+    }
+  }
+}

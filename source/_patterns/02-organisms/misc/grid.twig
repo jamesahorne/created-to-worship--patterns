@@ -1,0 +1,8 @@
+<section class="grid">
+  {% include "01-molecules/misc/info.twig" %} {% for video in videos %}
+  <article class="grid__article">
+    {% include "01-molecules/misc/video.twig" %}
+    <p class="u-text">{{ video.description }}</p>
+  </article>
+  {% endfor %}
+</section>
