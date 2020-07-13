@@ -10,15 +10,11 @@
   }
 }
 
-section {
-  margin-bottom: space(10);
-  @include breakpoint-up {
-    margin-bottom: space(15);
-  }
-  &:last-child {
-    margin-bottom: space(4);
+main {
+  > * {
+    margin-bottom: space(10);
     @include breakpoint-up {
-      margin-bottom: space(6);
+      margin-bottom: space(15);
     }
   }
 }
