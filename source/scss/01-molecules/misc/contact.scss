@@ -1,3 +1,7 @@
 .contact {
   text-align: center;
+  margin-bottom: space(4);
+  @include breakpoint-up {
+    margin-bottom: space(6);
+  }
 }
