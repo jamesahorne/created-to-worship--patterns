@@ -1,0 +1,41 @@
+.info {
+  @include font-secondary;
+  margin: 0 space(-2) space(1);
+  padding: space(2);
+  position: relative;
+  @include breakpoint-up(25) {
+    padding: space(3);
+  }
+  @include breakpoint-up($sm) {
+    margin: 0 space(-4) space(3);
+  }
+  @include breakpoint-up {
+    margin: 0;
+    padding: space(4);
+  }
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+  }
+  &::before {
+    background-color: lavender;
+    left: 0;
+    width: 40%;
+    // @include breakpoint-up($md) {
+    border-radius: $border-radius 0 0 $border-radius;
+    // }
+  }
+  &::after {
+    background-color: mediumpurple;
+    right: 0;
+    width: 60%;
+    // @include breakpoint-up($md) {
+    border-radius: 0 $border-radius $border-radius 0;
+    // }
+  }
+}
