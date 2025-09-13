@@ -31,7 +31,7 @@
     "@pattern-lab/engine-twig-php": "^5.10.1",
     "@pattern-lab/starterkit-twig-demo": "^5.10.1",
     "@pattern-lab/uikit-workshop": "^5.10.2",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^3.0.4",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.3.0",
